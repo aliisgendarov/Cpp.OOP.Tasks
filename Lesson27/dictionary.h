@@ -14,6 +14,37 @@ public:
 		_pairs = new KeyValuePair<TKey, TValue>[_capacity];
 	}
 	
+	Dictionary(const Dictionary& other)
+	{
+		_count = other._count;
+		_capacity = other._capacity;
+
+		_pairs = new KeyValuePair<TKey, TValue>[_capacity];
+
+		for (size_t i = 0; i < _count; i++)
+		{
+			_pairs[i] = other._pairs[i];
+		}
+	}
+	Dictionary& operator=(const Dictionary& other)
+	{
+		if (this != &other)
+		{
+			delete[] _pairs;
+
+			_count = other._count;
+			_capacity = other._capacity;
+
+			_pairs = new KeyValuePair<TKey, TValue>[_capacity];
+
+			for (size_t i = 0; i < _count; i++)
+			{
+				_pairs[i] = other._pairs[i];
+			}
+		}
+		return *this;
+	}
+
 	TValue& item(const TKey key)
 	{
 		for (size_t i = 0; i < _count; i++)
