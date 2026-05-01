@@ -10,4 +10,6 @@
   <Project Path="Lesson25/Lesson25.vcxproj" Id="1ccce46a-aaf7-44fe-9e5d-7e44329d6fa9" />
   <Project Path="Lesson26/Lesson26.vcxproj" Id="8c9d34e7-49c5-4c7e-9700-ba95caf7751f" />
   <Project Path="Lesson27/Lesson27.vcxproj" Id="5b86b260-8c0f-4d56-9f91-87d44e20eeba" />
+  <Project Path="Lesson28/Lesson28.vcxproj" Id="f211135f-bb0f-4aac-bca8-87729eef00e8" />
+  <Project Path="Lesson29/Lesson29.vcxproj" Id="3bfe1c5c-2c1c-4782-bea7-175d3d8ff091" />
 </Solution>
